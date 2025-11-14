@@ -1,0 +1,82 @@
+import { orders } from "../../../../drizzle/schema";
+type CreateOrderItemInput = {
+    productId: number;
+    quantity: number;
+};
+export type CreateOrderInput = {
+    userId?: number;
+    customerName: string;
+    customerEmail: string;
+    customerPhone?: string;
+    shippingAddress: string;
+    paymentMethod?: string;
+    notes?: string;
+    paymentReference?: string;
+    status?: (typeof orders.$inferSelect.status);
+    items: CreateOrderItemInput[];
+};
+export declare function listOrders(): Promise<{
+    id: number;
+    userId: number;
+    orderNumber: string;
+    customerName: string;
+    customerEmail: string;
+    customerPhone: string;
+    shippingAddress: string;
+    totalAmount: number;
+    status: "pending" | "paid" | "processing" | "shipped" | "delivered" | "cancelled";
+    paymentMethod: string;
+    paymentReference: string;
+    notes: string;
+    createdAt: Date;
+    updatedAt: Date;
+}[]>;
+export declare function getOrderById(id: number): Promise<{
+    id: number;
+    userId: number;
+    orderNumber: string;
+    customerName: string;
+    customerEmail: string;
+    customerPhone: string;
+    shippingAddress: string;
+    totalAmount: number;
+    status: "pending" | "paid" | "processing" | "shipped" | "delivered" | "cancelled";
+    paymentMethod: string;
+    paymentReference: string;
+    notes: string;
+    createdAt: Date;
+    updatedAt: Date;
+}>;
+export declare function getOrderByNumber(orderNumber: string): Promise<{
+    id: number;
+    userId: number;
+    orderNumber: string;
+    customerName: string;
+    customerEmail: string;
+    customerPhone: string;
+    shippingAddress: string;
+    totalAmount: number;
+    status: "pending" | "paid" | "processing" | "shipped" | "delivered" | "cancelled";
+    paymentMethod: string;
+    paymentReference: string;
+    notes: string;
+    createdAt: Date;
+    updatedAt: Date;
+}>;
+export declare function getOrderItems(orderId: number): Promise<{
+    id: number;
+    orderId: number;
+    productId: number;
+    productName: string;
+    productSlug: string;
+    unitPrice: number;
+    quantity: number;
+    createdAt: Date;
+}[]>;
+export declare function updateOrderStatus(id: number, status: typeof orders.$inferSelect.status): Promise<void>;
+export declare function createOrder(payload: CreateOrderInput): Promise<{
+    orderId: number;
+    orderNumber: string;
+    totalAmount: number;
+}>;
+export {};

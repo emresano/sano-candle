@@ -1,0 +1,42 @@
+SANO CANDLE - WORDPRESS GÖRSELLER KULLANIM KILAVUZU
+====================================================
+
+Bu klasördeki görselleri WordPress sitenize yüklemek için:
+
+1. LOGO YÜKLEME
+   Dosya: 06-sano-candle-logo.png
+   Konum: Görünüm → Özelleştir → Site Kimliği → Logo Seç
+   Önerilen genişlik: 150-200px
+
+2. ANA SAYFA KAPAK GÖRSELİ
+   Dosya: 01-anasayfa-kapak.png
+   Kullanım: Ana sayfa → Kapak bloğu → Arka plan görseli
+   Veya: Sayfalar → Ana Sayfa → Düzenle → Öne Çıkan Görsel
+
+3. MİNİMAL SERİ BANNER
+   Dosya: 02-minimal-seri-banner.png
+   Kullanım: Ana sayfa → Sütunlar bloğu → Sol sütun → Resim bloğu
+   Veya: Ürünler → Kategoriler → Minimal Seri → Kategori Görseli
+
+4. LÜKS SERİ BANNER
+   Dosya: 03-luks-seri-banner.png
+   Kullanım: Ana sayfa → Sütunlar bloğu → Sağ sütun → Resim bloğu
+   Veya: Ürünler → Kategoriler → Lüks Seri → Kategori Görseli
+
+5. HAKKIMIZDA SAYFASI GÖRSELİ
+   Dosya: 04-hakkimizda-gorsel.png
+   Kullanım: Sayfalar → Hakkımızda → Düzenle → Resim bloğu ekle
+   Veya: Öne Çıkan Görsel olarak ayarla
+
+6. İLETİŞİM SAYFASI GÖRSELİ
+   Dosya: 05-iletisim-gorsel.png
+   Kullanım: Sayfalar → İletişim → Düzenle → Resim bloğu ekle
+   Veya: Öne Çıkan Görsel olarak ayarla
+
+GENEL YÜKLEME ADIMI:
+1. WordPress admin paneline giriş yapın
+2. Medya → Yeni Ekle
+3. Tüm görselleri sürükle-bırak ile yükleyin
+4. Yukarıdaki yerlerde kullanın
+
+NOT: Tüm görseller 1920x1080 boyutunda ve web için optimize edilmiştir.

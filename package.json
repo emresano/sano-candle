@@ -1,0 +1,21 @@
+{
+  "name": "premium-candle-store",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r run dev",
+    "dev:api": "pnpm --filter premium-candle-store-api dev",
+    "dev:web": "pnpm --filter premium-candle-store-web dev",
+    "db:migrate": "drizzle-kit push",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "seed:admin": "pnpm --filter premium-candle-store-api seed:admin",
+    "seed:products": "pnpm --filter premium-candle-store-api seed:products"
+  },
+  "devDependencies": {
+    "drizzle-orm": "^0.44.7",
+    "drizzle-kit": "^0.31.6",
+    "typescript": "5.4.5"
+  }
+}
+
