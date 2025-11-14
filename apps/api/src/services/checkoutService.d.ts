@@ -17,7 +17,7 @@ export declare function createCheckoutSession(input: CheckoutSessionInput): Prom
 }>;
 export declare function finalizeCheckout(token: string): Promise<{
     status: "success";
-    orderNumber: string;
+    orderNumber: unknown;
     message?: undefined;
 } | {
     status: "failed";
@@ -29,7 +29,7 @@ export declare function finalizeCheckout(token: string): Promise<{
     orderNumber?: undefined;
 }>;
 export declare function getCheckoutSessionStatus(token: string): Promise<{
-    status: "failed" | "pending" | "paid";
-    orderId: number;
-    orderNumber: string;
+    status: unknown;
+    orderId: unknown;
+    orderNumber: unknown;
 }>;

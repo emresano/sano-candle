@@ -26,10 +26,8 @@ app.use(function (err, _req, res, _next) {
     console.error(err);
     return (0, http_1.sendError)(res, err instanceof Error ? err.message : "Beklenmeyen bir hata oluştu", 500);
 });
-if (!env_1.isProduction) {
-    var port_1 = process.env.PORT ? Number(process.env.PORT) : 4000;
-    app.listen(port_1, function () {
-        console.log("API server listening on port ".concat(port_1));
-    });
-}
+var port = process.env.PORT ? Number(process.env.PORT) : 4000;
+app.listen(port, function () {
+    console.log("API server listening on port ".concat(port));
+});
 exports.default = app;
