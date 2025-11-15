@@ -7,7 +7,6 @@
     "dev": "tsx watch src/server.ts",
     "build": "tsc -p tsconfig.build.json",
     "start": "node dist/server.js",
-    "start:api": "node dist/server.js",
     "lint": "echo 'No lint configured'",
     "seed:admin": "tsx src/scripts/seedAdmin.ts",
     "seed:products": "tsx src/scripts/seedProducts.ts"
