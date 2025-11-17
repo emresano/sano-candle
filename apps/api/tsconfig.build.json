@@ -3,21 +3,12 @@
   "compilerOptions": {
     "noEmit": false,
     "declaration": true,
-    "emitDeclarationOnly": false,
-    "outDir": "dist"
+    "emitDeclarationOnly": false
   },
-  "include": [
-    "src/server.ts",
-    "src/routes/**/*",
-    "src/services/**/*",
-    "src/db/**/*",
-    "src/utils/**/*",
-    "src/types/**/*"
-  ],
+  "include": ["src"],
   "exclude": [
-    "src/scripts",
-    "src/scripts/**/*",
     "src/**/*.test.ts",
+    "src/scripts/**/*",
     "dist"
   ]
 }
